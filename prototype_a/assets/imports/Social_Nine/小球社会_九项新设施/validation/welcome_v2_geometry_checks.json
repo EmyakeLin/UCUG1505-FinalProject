@@ -1,0 +1,56 @@
+{
+  "basket_to_arc_intersections": [],
+  "basket_to_arc_sampled_min_clearance_D": 0.3888,
+  "contents_to_basket_shell_intersections": [],
+  "content_to_content_intersections": [],
+  "centerline_ramp_surface_z": [
+    [
+      -1.96,
+      null
+    ],
+    [
+      -1.95,
+      0.1602
+    ],
+    [
+      -1.85,
+      0.161937
+    ],
+    [
+      -1.5,
+      0.189202
+    ],
+    [
+      -1.0,
+      0.250436
+    ],
+    [
+      -0.75,
+      0.273068
+    ],
+    [
+      -0.6,
+      0.28
+    ],
+    [
+      -0.5,
+      0.28
+    ],
+    [
+      0,
+      0.28
+    ]
+  ],
+  "path_surface_z": 0.1602,
+  "greeting_surface_z": 0.28,
+  "baskets_centers_D": {
+    "left": [
+      -2.72,
+      -2.34
+    ],
+    "right": [
+      2.83,
+      -2.24
+    ]
+  }
+}

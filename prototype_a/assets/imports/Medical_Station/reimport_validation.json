@@ -1,0 +1,40 @@
+{
+  "mesh_count": 54,
+  "triangle_count": 37596,
+  "all_coordinates_finite": true,
+  "all_meshes_have_materials": true,
+  "all_meshes_have_UV": true,
+  "preview_objects_present": false,
+  "separate_roots": [
+    "Medical_Station_ROOT",
+    "Energy_Rescue_Kit_0_ROOT",
+    "Energy_Rescue_Kit_1_ROOT",
+    "Rest_Rescue_Kit_0_ROOT",
+    "Rest_Rescue_Kit_1_ROOT",
+    "Rescue_Cart_ROOT"
+  ],
+  "Cart_wheel_bounds": [
+    [
+      -3.2100000381469727,
+      -3.3299999237060547,
+      0.1199999675154686
+    ],
+    [
+      -1.7899999618530273,
+      -1.7699999809265137,
+      0.5600000619888306
+    ]
+  ],
+  "Foundation_bounds": [
+    [
+      -4.199999809265137,
+      -3.5,
+      0.0
+    ],
+    [
+      4.199999809265137,
+      3.5,
+      0.11999999731779099
+    ]
+  ]
+}

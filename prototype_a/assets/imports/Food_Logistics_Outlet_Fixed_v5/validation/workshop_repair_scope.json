@@ -1,0 +1,7 @@
+{
+  "source": "formal v4",
+  "changed_object": "Integrated green perimeter and terracotta dispatch wall",
+  "geometry_vertices_adjusted": 722,
+  "method": "Local terminal top-profile deformation and explicit planar material-joint edge insertion. No shading-only fix. No changes to bed/ramp/base or any other object.",
+  "known_remaining": "Previously diagnosed buried cross-object intersections retained; do not claim all-scene collision free."
+}

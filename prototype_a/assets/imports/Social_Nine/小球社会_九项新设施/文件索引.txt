@@ -1,0 +1,18 @@
+新做的九项资产（仅本批）
+
+中文名称              文件名
+学习室                learning_room
+社区广场              community_plaza
+公共议事坪            public_forum
+公共厨房              community_kitchen
+新伙伴迎接站（修正版）welcome_station
+修理工坊              repair_workshop
+安静花园              quiet_garden
+材料加工站            material_processing
+能源研究台            energy_research
+
+上述文件名在 source/ 中对应 .blend，在 models/ 中对应 .glb，在 previews/ 中对应 .png。
+迎接站另附 welcome_station_detail.png，便于查看移开的物资篮和连续坡道。
+source/Social_Nine_Combined.blend 把九项排成三行，供一起查看；各根节点仅为展示而平移。独立源/GLB保持原本原点。
+预览中的比例球不包含在正式模型中。所有用途与设备工作方式均为设计语义，未实现游戏逻辑。
+中文设计说明解释每项用途、外形与接入注意，README_开始使用.txt介绍目录和通用约定。

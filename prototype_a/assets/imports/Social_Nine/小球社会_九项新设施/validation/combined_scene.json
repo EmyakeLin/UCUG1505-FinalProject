@@ -1,0 +1,95 @@
+{
+  "note": "Combined editor arrangement only; individual sources and GLBs retain their own origins. No runtime behavior.",
+  "assets": [
+    {
+      "asset": "learning_room",
+      "root": "01_LEARNING_ROOM_ROOT",
+      "presentation_position": [
+        -14.0,
+        14.0,
+        0.0
+      ],
+      "objects": 93
+    },
+    {
+      "asset": "community_plaza",
+      "root": "02_COMMUNITY_PLAZA_ROOT",
+      "presentation_position": [
+        0.0,
+        14.0,
+        0.0
+      ],
+      "objects": 20
+    },
+    {
+      "asset": "public_forum",
+      "root": "03_PUBLIC_FORUM_ROOT",
+      "presentation_position": [
+        14.0,
+        14.0,
+        0.0
+      ],
+      "objects": 16
+    },
+    {
+      "asset": "community_kitchen",
+      "root": "Community_Kitchen_ROOT",
+      "presentation_position": [
+        -14.0,
+        0.0,
+        0.0
+      ],
+      "objects": 56
+    },
+    {
+      "asset": "welcome_station",
+      "root": "New_Friend_Welcome_Station_ROOT",
+      "presentation_position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "objects": 36
+    },
+    {
+      "asset": "repair_workshop",
+      "root": "RepairWorkshop_ROOT",
+      "presentation_position": [
+        14.0,
+        0.0,
+        0.0
+      ],
+      "objects": 43
+    },
+    {
+      "asset": "quiet_garden",
+      "root": "QuietGarden_ROOT",
+      "presentation_position": [
+        -14.0,
+        -14.0,
+        0.0
+      ],
+      "objects": 55
+    },
+    {
+      "asset": "material_processing",
+      "root": "01_MATERIAL_PROCESSING_ROOT",
+      "presentation_position": [
+        0.0,
+        -14.0,
+        0.0
+      ],
+      "objects": 70
+    },
+    {
+      "asset": "energy_research",
+      "root": "02_ENERGY_RESEARCH_ROOT",
+      "presentation_position": [
+        14.0,
+        -14.0,
+        0.0
+      ],
+      "objects": 58
+    }
+  ]
+}

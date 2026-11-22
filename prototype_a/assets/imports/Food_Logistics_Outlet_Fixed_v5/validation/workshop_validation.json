@@ -1,0 +1,451 @@
+{
+  "building_food_workshop_dispatch_v5": {
+    "mesh_count": 20,
+    "fruit_count": 0,
+    "dimensions": [
+      8.420000076293945,
+      6.930000305175781,
+      3.5799999237060547
+    ],
+    "bounds_min": [
+      -4.210000038146973,
+      -3.4650001525878906,
+      0.0
+    ],
+    "bounds_max": [
+      4.210000038146973,
+      3.4650001525878906,
+      3.5799999237060547
+    ],
+    "all_uv": true,
+    "finite_coordinates": true,
+    "root_location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "root_rotation_quaternion": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "root_scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "no_cameras_lights": true,
+    "node_names": [
+      "FoodWorkshop_Root",
+      "Central cream upper disc",
+      "Central lower round plinth",
+      "Dock_Cart",
+      "Entry_Approach",
+      "Integrated green perimeter and terracotta dispatch wall",
+      "Left broad leaf 1",
+      "Left broad leaf 2",
+      "Left broad leaf 3",
+      "Left broad leaf 4",
+      "Left oval grow basin cream upper wall",
+      "Left oval grow basin green foundation",
+      "Left oval grow basin recessed soil",
+      "Queue_Wait",
+      "Right broad leaf 1",
+      "Right broad leaf 2",
+      "Right broad leaf 3",
+      "Right broad leaf 4",
+      "Right squared grow basin cream upper wall",
+      "Right squared grow basin green foundation",
+      "Right squared grow basin recessed soil",
+      "Single broad rounded platform",
+      "Spawn_Food",
+      "Trough recessed bed",
+      "Wide smoothly blended exit ramp",
+      "Work_L",
+      "Work_Pad",
+      "Work_R"
+    ],
+    "fruit_geometry": [],
+    "markers": {
+      "Dock_Cart": {
+        "location": [
+          2.4200000762939453,
+          -4.635000228881836,
+          0.0
+        ],
+        "purpose": "Suggested cart root outside final exit lip with Rz=pi; reference-only, loading animation/interface height not validated."
+      },
+      "Entry_Approach": {
+        "location": [
+          -1.649999976158142,
+          -3.4950003623962402,
+          0.5
+        ],
+        "purpose": "Outside the physical front-left entrance, 1D ball center reference; routing not simulated."
+      },
+      "Queue_Wait": {
+        "location": [
+          -3.0999999046325684,
+          -4.045000076293945,
+          0.5
+        ],
+        "purpose": "External candidate waiting target; navigation not simulated."
+      },
+      "Spawn_Food": {
+        "location": [
+          2.4200000762939453,
+          -1.6850001811981201,
+          0.832099974155426
+        ],
+        "purpose": "Matches an existing dispatch fruit center; custom flattened visual fruit, not old .7D cargo."
+      },
+      "Work_L": {
+        "location": [
+          -2.049999952316284,
+          -0.5450001358985901,
+          0.7300000190734863
+        ],
+        "purpose": "Candidate ball-center standing target in front of left basin; navigation not simulated."
+      },
+      "Work_Pad": {
+        "location": [
+          -0.3499999940395355,
+          -0.6150001287460327,
+          1.1799999475479126
+        ],
+        "purpose": "1D ball center above actual 0.68D upper pad."
+      },
+      "Work_R": {
+        "location": [
+          2.0299999713897705,
+          -0.04500015079975128,
+          1.4500000476837158
+        ],
+        "purpose": "Right basin front rim contact target, NOT a verified ball-center standing position; cramped approach requires runtime review."
+      }
+    }
+  },
+  "building_food_workshop_dispatch_v5_display": {
+    "mesh_count": 29,
+    "fruit_count": 9,
+    "dimensions": [
+      8.420000076293945,
+      6.930000305175781,
+      3.5799999237060547
+    ],
+    "bounds_min": [
+      -4.210000038146973,
+      -3.4650001525878906,
+      0.0
+    ],
+    "bounds_max": [
+      4.210000038146973,
+      3.4650001525878906,
+      3.5799999237060547
+    ],
+    "all_uv": true,
+    "finite_coordinates": true,
+    "root_location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "root_rotation_quaternion": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "root_scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "no_cameras_lights": true,
+    "node_names": [
+      "FoodWorkshop_Root",
+      "Central cream upper disc",
+      "Central lower round plinth",
+      "Dispatch fruit 1",
+      "Dispatch fruit 2",
+      "Dispatch fruit 3",
+      "Dock_Cart",
+      "Entry_Approach",
+      "Integrated green perimeter and terracotta dispatch wall",
+      "Left broad leaf 1",
+      "Left broad leaf 2",
+      "Left broad leaf 3",
+      "Left broad leaf 4",
+      "Left fruit 1",
+      "Left fruit 2",
+      "Left fruit 3",
+      "Left oval grow basin cream upper wall",
+      "Left oval grow basin green foundation",
+      "Left oval grow basin recessed soil",
+      "Queue_Wait",
+      "Right broad leaf 1",
+      "Right broad leaf 2",
+      "Right broad leaf 3",
+      "Right broad leaf 4",
+      "Right fruit 1",
+      "Right fruit 2",
+      "Right fruit 3",
+      "Right squared grow basin cream upper wall",
+      "Right squared grow basin green foundation",
+      "Right squared grow basin recessed soil",
+      "Single broad rounded platform",
+      "Spawn_Food",
+      "Trough recessed bed",
+      "Wide smoothly blended exit ramp",
+      "Work_L",
+      "Work_Pad",
+      "Work_R"
+    ],
+    "fruit_geometry": [
+      {
+        "name": "Dispatch fruit 1",
+        "bounds_min": [
+          1.4799998998641968,
+          -2.2750000953674316,
+          0.5449999570846558
+        ],
+        "bounds_max": [
+          2.1399998664855957,
+          -1.6150000095367432,
+          1.1191999912261963
+        ],
+        "dimensions": [
+          0.6599999666213989,
+          0.6600000858306885,
+          0.5742000341415405
+        ],
+        "Z_to_X_ratio": 0.8700000957286768,
+        "structure_triangle_intersections": {}
+      },
+      {
+        "name": "Dispatch fruit 2",
+        "bounds_min": [
+          2.0900001525878906,
+          -2.015000104904175,
+          0.5449999570846558
+        ],
+        "bounds_max": [
+          2.75,
+          -1.3550001382827759,
+          1.1191999912261963
+        ],
+        "dimensions": [
+          0.6599998474121094,
+          0.6599999666213989,
+          0.5742000341415405
+        ],
+        "Z_to_X_ratio": 0.8700002528682484,
+        "structure_triangle_intersections": {}
+      },
+      {
+        "name": "Dispatch fruit 3",
+        "bounds_min": [
+          2.700000047683716,
+          -1.845000147819519,
+          0.5449999570846558
+        ],
+        "bounds_max": [
+          3.359999895095825,
+          -1.1850000619888306,
+          1.1191999912261963
+        ],
+        "dimensions": [
+          0.6599998474121094,
+          0.6600000858306885,
+          0.5742000341415405
+        ],
+        "Z_to_X_ratio": 0.8700002528682484,
+        "structure_triangle_intersections": {}
+      },
+      {
+        "name": "Left fruit 1",
+        "bounds_min": [
+          -3.239999771118164,
+          0.6150000095367432,
+          1.0749999284744263
+        ],
+        "bounds_max": [
+          -2.440000057220459,
+          1.4149996042251587,
+          1.7710000276565552
+        ],
+        "dimensions": [
+          0.7999997138977051,
+          0.7999995946884155,
+          0.6960000991821289
+        ],
+        "Z_to_X_ratio": 0.8700004351140624,
+        "structure_triangle_intersections": {
+          "Left broad leaf 4": 100
+        }
+      },
+      {
+        "name": "Left fruit 2",
+        "bounds_min": [
+          -2.4200000762939453,
+          0.42499983310699463,
+          1.0750000476837158
+        ],
+        "bounds_max": [
+          -1.5999999046325684,
+          1.244999885559082,
+          1.7883999347686768
+        ],
+        "dimensions": [
+          0.820000171661377,
+          0.8200000524520874,
+          0.7133998870849609
+        ],
+        "Z_to_X_ratio": 0.8699996801702657,
+        "structure_triangle_intersections": {}
+      },
+      {
+        "name": "Left fruit 3",
+        "bounds_min": [
+          -1.639411211013794,
+          0.6725555658340454,
+          1.0749999284744263
+        ],
+        "bounds_max": [
+          -0.8394115567207336,
+          1.472555160522461,
+          1.7710000276565552
+        ],
+        "dimensions": [
+          0.7999996542930603,
+          0.7999995946884155,
+          0.6960000991821289
+        ],
+        "Z_to_X_ratio": 0.870000499934174,
+        "structure_triangle_intersections": {}
+      },
+      {
+        "name": "Right fruit 1",
+        "bounds_min": [
+          0.8400002717971802,
+          0.6150000095367432,
+          1.0749999284744263
+        ],
+        "bounds_max": [
+          1.6399998664855957,
+          1.4149996042251587,
+          1.7710000276565552
+        ],
+        "dimensions": [
+          0.7999995946884155,
+          0.7999995946884155,
+          0.6960000991821289
+        ],
+        "Z_to_X_ratio": 0.8700005647542953,
+        "structure_triangle_intersections": {}
+      },
+      {
+        "name": "Right fruit 2",
+        "bounds_min": [
+          1.6599998474121094,
+          0.42499983310699463,
+          1.0750000476837158
+        ],
+        "bounds_max": [
+          2.4800000190734863,
+          1.244999885559082,
+          1.7883999347686768
+        ],
+        "dimensions": [
+          0.820000171661377,
+          0.8200000524520874,
+          0.7133998870849609
+        ],
+        "Z_to_X_ratio": 0.8699996801702657,
+        "structure_triangle_intersections": {}
+      },
+      {
+        "name": "Right fruit 3",
+        "bounds_min": [
+          2.4600000381469727,
+          0.7450000047683716,
+          1.0749999284744263
+        ],
+        "bounds_max": [
+          3.2599997520446777,
+          1.544999599456787,
+          1.7710000276565552
+        ],
+        "dimensions": [
+          0.7999997138977051,
+          0.7999995946884155,
+          0.6960000991821289
+        ],
+        "Z_to_X_ratio": 0.8700004351140624,
+        "structure_triangle_intersections": {
+          "Right broad leaf 2": 10,
+          "Right broad leaf 4": 159
+        }
+      }
+    ],
+    "markers": {
+      "Dock_Cart": {
+        "location": [
+          2.4200000762939453,
+          -4.635000228881836,
+          0.0
+        ],
+        "purpose": "Suggested cart root outside final exit lip with Rz=pi; reference-only, loading animation/interface height not validated."
+      },
+      "Entry_Approach": {
+        "location": [
+          -1.649999976158142,
+          -3.4950003623962402,
+          0.5
+        ],
+        "purpose": "Outside the physical front-left entrance, 1D ball center reference; routing not simulated."
+      },
+      "Queue_Wait": {
+        "location": [
+          -3.0999999046325684,
+          -4.045000076293945,
+          0.5
+        ],
+        "purpose": "External candidate waiting target; navigation not simulated."
+      },
+      "Spawn_Food": {
+        "location": [
+          2.4200000762939453,
+          -1.6850001811981201,
+          0.832099974155426
+        ],
+        "purpose": "Matches an existing dispatch fruit center; custom flattened visual fruit, not old .7D cargo."
+      },
+      "Work_L": {
+        "location": [
+          -2.049999952316284,
+          -0.5450001358985901,
+          0.7300000190734863
+        ],
+        "purpose": "Candidate ball-center standing target in front of left basin; navigation not simulated."
+      },
+      "Work_Pad": {
+        "location": [
+          -0.3499999940395355,
+          -0.6150001287460327,
+          1.1799999475479126
+        ],
+        "purpose": "1D ball center above actual 0.68D upper pad."
+      },
+      "Work_R": {
+        "location": [
+          2.0299999713897705,
+          -0.04500015079975128,
+          1.4500000476837158
+        ],
+        "purpose": "Right basin front rim contact target, NOT a verified ball-center standing position; cramped approach requires runtime review."
+      }
+    }
+  }
+}

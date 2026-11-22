@@ -1,0 +1,22 @@
+{
+  "bounds_min": [
+    -0.395,
+    -0.43,
+    0.0
+  ],
+  "bounds_max": [
+    0.395,
+    0.315,
+    0.35
+  ],
+  "dimensions_D": [
+    0.79,
+    0.745,
+    0.35
+  ],
+  "mesh_objects": 7,
+  "all_meshes_have_UV": true,
+  "all_meshes_have_material": true,
+  "food_restore": 0.8,
+  "static_only": true
+}

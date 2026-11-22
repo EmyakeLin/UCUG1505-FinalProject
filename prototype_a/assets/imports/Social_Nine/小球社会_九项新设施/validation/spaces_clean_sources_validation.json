@@ -1,0 +1,41 @@
+[
+  {
+    "file": "learning_room_clean.blend",
+    "mesh_count": 92,
+    "root_count": 1,
+    "collections": [
+      "01_LEARNING_ROOM"
+    ],
+    "no_presentation_objects": true,
+    "all_meshes_parented_to_root": true,
+    "all_uv": true,
+    "all_materials": true,
+    "bevel_modifiers_retained": 92
+  },
+  {
+    "file": "community_plaza_clean.blend",
+    "mesh_count": 19,
+    "root_count": 1,
+    "collections": [
+      "02_COMMUNITY_PLAZA"
+    ],
+    "no_presentation_objects": true,
+    "all_meshes_parented_to_root": true,
+    "all_uv": true,
+    "all_materials": true,
+    "bevel_modifiers_retained": 14
+  },
+  {
+    "file": "public_forum_clean.blend",
+    "mesh_count": 15,
+    "root_count": 1,
+    "collections": [
+      "03_PUBLIC_FORUM"
+    ],
+    "no_presentation_objects": true,
+    "all_meshes_parented_to_root": true,
+    "all_uv": true,
+    "all_materials": true,
+    "bevel_modifiers_retained": 15
+  }
+]

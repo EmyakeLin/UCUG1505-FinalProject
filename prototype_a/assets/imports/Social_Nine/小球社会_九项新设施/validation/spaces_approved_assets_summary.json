@@ -1,0 +1,139 @@
+[
+  {
+    "name": "学习室",
+    "source": "learning_room_clean.blend",
+    "glb": "learning_room_approved.glb",
+    "unit": "1 unit = 1D ball diameter",
+    "mesh_objects": 92,
+    "root_objects": [
+      "01_LEARNING_ROOM_ROOT"
+    ],
+    "objects_total": 93,
+    "bounds_D": {
+      "min": [
+        -4.5,
+        -4.104668140411377,
+        0.0
+      ],
+      "max": [
+        4.5,
+        3.5,
+        1.880000114440918
+      ],
+      "size": [
+        9.0,
+        7.6047,
+        1.88
+      ]
+    },
+    "all_meshes_have_uv": true,
+    "all_meshes_have_materials": true,
+    "material_names": [
+      "Book blue",
+      "Book cream",
+      "Book terracotta",
+      "Cream | plaster",
+      "Ivory | reading surface",
+      "Light sage | inset",
+      "Paper",
+      "Peach | seat pads",
+      "Sage | painted structure",
+      "Soft terracotta | earth",
+      "Warm ochre | accents"
+    ],
+    "unit_scale": true,
+    "all_meshes_parented_to_asset_root": true,
+    "excluded_preview_and_presentation": true,
+    "approved_shape_preserved": true,
+    "runtime_functions_implemented": false,
+    "glb_bytes": 1023944
+  },
+  {
+    "name": "社区广场",
+    "source": "community_plaza_clean.blend",
+    "glb": "community_plaza_approved.glb",
+    "unit": "1 unit = 1D ball diameter",
+    "mesh_objects": 19,
+    "root_objects": [
+      "02_COMMUNITY_PLAZA_ROOT"
+    ],
+    "objects_total": 20,
+    "bounds_D": {
+      "min": [
+        -5.0,
+        -5.504711627960205,
+        0.0
+      ],
+      "max": [
+        5.0,
+        5.0,
+        2.1499998569488525
+      ],
+      "size": [
+        10.0,
+        10.5047,
+        2.15
+      ]
+    },
+    "all_meshes_have_uv": true,
+    "all_meshes_have_materials": true,
+    "material_names": [
+      "Cream | plaster",
+      "Ivory | reading surface",
+      "Light sage | inset",
+      "Peach | seat pads",
+      "Sage | painted structure",
+      "Soft terracotta | earth"
+    ],
+    "unit_scale": true,
+    "all_meshes_parented_to_asset_root": true,
+    "excluded_preview_and_presentation": true,
+    "approved_shape_preserved": true,
+    "runtime_functions_implemented": false,
+    "glb_bytes": 1044592
+  },
+  {
+    "name": "公共议事坪",
+    "source": "public_forum_clean.blend",
+    "glb": "public_forum_approved.glb",
+    "unit": "1 unit = 1D ball diameter",
+    "mesh_objects": 15,
+    "root_objects": [
+      "03_PUBLIC_FORUM_ROOT"
+    ],
+    "objects_total": 16,
+    "bounds_D": {
+      "min": [
+        -5.0,
+        -5.504711627960205,
+        0.0
+      ],
+      "max": [
+        5.0,
+        5.0,
+        0.8199999928474426
+      ],
+      "size": [
+        10.0,
+        10.5047,
+        0.82
+      ]
+    },
+    "all_meshes_have_uv": true,
+    "all_meshes_have_materials": true,
+    "material_names": [
+      "Cream | plaster",
+      "Ivory | reading surface",
+      "Light sage | inset",
+      "Peach | seat pads",
+      "Sage | painted structure",
+      "Soft terracotta | earth"
+    ],
+    "unit_scale": true,
+    "all_meshes_parented_to_asset_root": true,
+    "excluded_preview_and_presentation": true,
+    "approved_shape_preserved": true,
+    "runtime_functions_implemented": false,
+    "glb_bytes": 1040240
+  }
+]

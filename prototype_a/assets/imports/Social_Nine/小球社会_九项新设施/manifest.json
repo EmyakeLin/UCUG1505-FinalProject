@@ -1,0 +1,198 @@
+{
+  "README_开始使用.txt": {
+    "bytes": 1520,
+    "sha256": "e683e41a2a8dfcffa65e70929ab42a4f0282de5e0a0ba665be8b3c1ba01d7adc"
+  },
+  "README_spaces.txt": {
+    "bytes": 1302,
+    "sha256": "add68481c33a36baac1a18cb6ce5640d69d24cda261d7bc50ae5f359fa289112"
+  },
+  "文件索引.txt": {
+    "bytes": 1055,
+    "sha256": "0d37f41b3508dbd03eee52aa0c93d8312229f46aa48bd5d5cd5f3ac3ddbe5834"
+  },
+  "AI_Assistance.txt": {
+    "bytes": 555,
+    "sha256": "24ee65aa4d4cf73572842557d9016b51f89eb8114eb9853a2f8b9d36c1ad039a"
+  },
+  "README_garden_repair.txt": {
+    "bytes": 2002,
+    "sha256": "9d4a7c811b3c96394940f314fdb82807cb093bd25cd9b924b93ccb728fd7eec5"
+  },
+  "设计说明_九项设施.txt": {
+    "bytes": 6296,
+    "sha256": "6acffd0752baeb32ec66105a53de6f5606198cd466f1d5e728d9f03d499971c2"
+  },
+  "industry_README_工业科技资产.txt": {
+    "bytes": 2373,
+    "sha256": "d1a63eafb8f42eae858377364bc60d0094c28f6d2ed16ed2584722ac5109127e"
+  },
+  "models/quiet_garden.glb": {
+    "bytes": 1364924,
+    "sha256": "253e0f7aa7e921b73e2763007672c8ba8e0949daebb7901dc39280c703d0fd80"
+  },
+  "models/community_plaza.glb": {
+    "bytes": 1044592,
+    "sha256": "015c7c5b96f240e680df951af799bbfd39ff763896930f028709d6edd05e758a"
+  },
+  "models/repair_workshop.glb": {
+    "bytes": 1312572,
+    "sha256": "45fe123841695581cd4616a063881ad90baa2208cee7d2a19ddcdd3b32a918b3"
+  },
+  "models/energy_research.glb": {
+    "bytes": 1072312,
+    "sha256": "91c519d603a8b66edf43625cb0d9e4ba7abd48fe561fbbeb6f7a33cfb6b3a156"
+  },
+  "models/welcome_station.glb": {
+    "bytes": 1111808,
+    "sha256": "0727e9a1ae2c83b6525dd2ad261d9cd7ba997d92983acb2cc8cdea14c2bdb1d4"
+  },
+  "models/public_forum.glb": {
+    "bytes": 1040240,
+    "sha256": "67793c97704aa74b3733bbfe5db8c74896441fa6b5a0947378290020f7a716d0"
+  },
+  "models/learning_room.glb": {
+    "bytes": 1023944,
+    "sha256": "842f2ad4fb21d615fc39bc91a7c087a2712caa5e46846c8e96c3888713e7f46e"
+  },
+  "models/material_processing.glb": {
+    "bytes": 1003748,
+    "sha256": "64477aa7e562ff1ec09b757f6d187b634641ce827b818aeaf55d6cde514ad7ad"
+  },
+  "models/community_kitchen.glb": {
+    "bytes": 1460896,
+    "sha256": "8f8e4738a1f5ad2da3dbb406f8ef54c5686ae0256a3e3a38f7e39dda1aa0ed90"
+  },
+  "previews/community_kitchen.png": {
+    "bytes": 1767442,
+    "sha256": "d3eed51db120d385ffe1aeac55168a34bea7248731f85ae402c30a37c2d59eb6"
+  },
+  "previews/energy_research.png": {
+    "bytes": 1592953,
+    "sha256": "84eba339428d98db7aab1c2677dbe46397934ea4e58a3e320563720c0f1cde42"
+  },
+  "previews/learning_room.png": {
+    "bytes": 1814308,
+    "sha256": "039979f342cff2a78e77fb65b11b7bf807cf805d53f4762fb58d8a234372792b"
+  },
+  "previews/material_processing.png": {
+    "bytes": 1602394,
+    "sha256": "7677e5c08fa00c0ff05dcfeda6f96b3358daf3e6dc3ea4f02606735897c34fc7"
+  },
+  "previews/industry_group.png": {
+    "bytes": 2397273,
+    "sha256": "213acb61b53ca25bbe232fcd22c9ab0115deea4f04c929850b4247f98ee160ee"
+  },
+  "previews/welcome_station.png": {
+    "bytes": 1725634,
+    "sha256": "62b7aff576e3792de49ef3913c2b726ee5ef3de9d816d587e12a9f157d626011"
+  },
+  "previews/repair_workshop.png": {
+    "bytes": 1489249,
+    "sha256": "d221d0b86feca373c02998f32d7b0e88da45726689057a3fa84cfd78ad5b975c"
+  },
+  "previews/community_plaza.png": {
+    "bytes": 1720413,
+    "sha256": "93a4a760f73961babaec4223a274da75bcef969b7ead279f623b8221d497ae51"
+  },
+  "previews/public_forum.png": {
+    "bytes": 1708287,
+    "sha256": "8e924b6b0d2a9a04fcbadb9f364661e72f330495169c0f50851ffceb73078815"
+  },
+  "previews/welcome_station_detail.png": {
+    "bytes": 2003017,
+    "sha256": "324bb8176d17b8dced7ef944128d4c0b1d6b26374b7d8cc1e8b0ab4bf170d602"
+  },
+  "previews/garden_repair_group.png": {
+    "bytes": 2737917,
+    "sha256": "7955edbb1647479ff7327404f972971a4dbae5ac1879c6193ce8ef2870af0788"
+  },
+  "previews/social_spaces_group.png": {
+    "bytes": 2558926,
+    "sha256": "effb2365576df040143f3d515aa4763ad3c4743f22d5ca8f2eefbf1b663f142d"
+  },
+  "previews/quiet_garden.png": {
+    "bytes": 1475803,
+    "sha256": "39daaf6a85fe7b850d1249768c9a2582632437bb845e2cb16dae6c5675c7f4c9"
+  },
+  "source/quiet_garden.blend": {
+    "bytes": 1803908,
+    "sha256": "c7237a6446b3ec1cd4f67e238f6a17d28d53d278419e6fe4bc36726dc0099d35"
+  },
+  "source/material_processing.blend": {
+    "bytes": 1495668,
+    "sha256": "fa25810db5d0cb65350ab51f198fab56f01b3a93312e345f1a26801242ffa19f"
+  },
+  "source/welcome_station.blend": {
+    "bytes": 1783948,
+    "sha256": "cb18172022f2b6cb95bdb8a2aa142ce05a4c923a83ed50f430ef3abb77cfcf2d"
+  },
+  "source/community_plaza.blend": {
+    "bytes": 1190068,
+    "sha256": "11da86b5182d8af6ec611b897f311afa8100cd29d51021af5248b9b5cef35508"
+  },
+  "source/public_forum.blend": {
+    "bytes": 955224,
+    "sha256": "adf32a7e9a2a996acf1dff262248f72b5117738c8da0619be3678e03f4adf4eb"
+  },
+  "source/energy_research.blend": {
+    "bytes": 1793496,
+    "sha256": "34ceafd8924c0da0984d81746f7f9cc394c1ddb1363f5e7052e956d271062681"
+  },
+  "source/learning_room.blend": {
+    "bytes": 1363560,
+    "sha256": "b54a0dcd26210025a0deaaff766f6b29ae35992e88224e71c26b70b2a7055b80"
+  },
+  "source/repair_workshop.blend": {
+    "bytes": 1242512,
+    "sha256": "d367e87dd96ee1c5a1d65187f62be9c68f2ecb8490add6a3764eed84f90de7d2"
+  },
+  "source/Social_Nine_Combined.blend": {
+    "bytes": 11215128,
+    "sha256": "163a3654908e75c96a5598a8c424fd44f03d8a4b748d5eaefdbab7e36f230775"
+  },
+  "source/community_kitchen.blend": {
+    "bytes": 2668076,
+    "sha256": "8c93715511a362d29079c90b6f8512376a2463d30d7c8be3f7c4b4dec4350a1d"
+  },
+  "validation/services_welcome_station_v2_reimport_check.json": {
+    "bytes": 528,
+    "sha256": "97387e54cd3d03d7959cba14009a859841d83dc8e04670120b57e47b380249c0"
+  },
+  "validation/industry_validation_report.json": {
+    "bytes": 4153,
+    "sha256": "162c0be5a2ab59bcd447b87c345c7027c664765dd3753aadacf57a14884001e4"
+  },
+  "validation/industry_energy_research_validation.json": {
+    "bytes": 1941,
+    "sha256": "8f9cfd25ad3e24980bb8facb911b9f1bad2b0e51b0c23ddeb4def819a7fdc756"
+  },
+  "validation/spaces_clean_sources_validation.json": {
+    "bytes": 922,
+    "sha256": "65a9bfbf658c87defc2ed867a369b1fd9dd25adc1360108aa171d24053606e77"
+  },
+  "validation/welcome_v2_geometry_checks.json": {
+    "bytes": 739,
+    "sha256": "6ba81715df8867ed6d60fbbba492355a7e71704fe9c24ddf2e3ad19a970a580b"
+  },
+  "validation/services_community_kitchen_reimport_check.json": {
+    "bytes": 524,
+    "sha256": "c6e95cc44ec5888f197a66b698c69290ad1219831a66b1e476270a411a26b62a"
+  },
+  "validation/combined_scene.json": {
+    "bytes": 1845,
+    "sha256": "66d0c4cdffee7d4fca90f9594d09f7eab81647d4a5ff3ab45f210666b17593ed"
+  },
+  "validation/garden_repair_validation.json": {
+    "bytes": 5965,
+    "sha256": "5594270dac144e1efee8b0d0b3007cdae951551b047d3fe8e5b3780a8006ca3d"
+  },
+  "validation/industry_material_processing_validation.json": {
+    "bytes": 1914,
+    "sha256": "742b74c63995c7cab081c96e3c2d36fc423b997223425d2cabb620e6ba284e5e"
+  },
+  "validation/spaces_approved_assets_summary.json": {
+    "bytes": 3183,
+    "sha256": "c91c2db24c6bebc527a84cfa520502bd5f649b793fb1500d448cc295bf6da95b"
+  }
+}

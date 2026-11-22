@@ -1,0 +1,73 @@
+{
+  "asset": "material_processing",
+  "status": "PASS: exported and actually reimported in Blender",
+  "source_blend": "/workspace/scratch/f128404f8422/model_work/social_batch/industry/material_processing.blend",
+  "glb": "/workspace/scratch/f128404f8422/model_work/social_batch/industry/material_processing.glb",
+  "root": "01_MATERIAL_PROCESSING_ROOT",
+  "root_location": [
+    0,
+    0,
+    0
+  ],
+  "root_scale": [
+    1,
+    1,
+    1
+  ],
+  "unit": "1 Blender unit = ball diameter D; glTF meters use same numeric scale",
+  "source_bounds_D": {
+    "min": [
+      -3.8,
+      -3.41279,
+      0.0
+    ],
+    "max": [
+      3.8,
+      2.9,
+      1.73
+    ],
+    "size": [
+      7.6,
+      6.31279,
+      1.73
+    ]
+  },
+  "reimport_bounds_D": {
+    "min": [
+      -3.8,
+      -3.41279,
+      0.0
+    ],
+    "max": [
+      3.8,
+      2.9,
+      1.73
+    ],
+    "size": [
+      7.6,
+      6.31279,
+      1.73
+    ]
+  },
+  "source_mesh_objects": 69,
+  "import_mesh_objects": 69,
+  "vertices": 26020,
+  "triangles": 23848,
+  "uv_all": true,
+  "materials_all": true,
+  "material_count": 10,
+  "finite_vertices": true,
+  "single_root": true,
+  "no_environment_or_scale_balls": true,
+  "animations": 0,
+  "source_metadata": {
+    "unit": "1 Blender unit = 1 ball diameter D",
+    "status": "STATIC VISUAL ASSET | no runtime logic",
+    "front": "negative Y",
+    "footprint_D": "7.6 x 6.325 including entry ramp",
+    "passage_D": "2.0 entrance; unobstructed front travel strip y=-2.55 to -0.55, width 2.0D for x=-3.1 to 1.9",
+    "features": "Low raw hopper -> short conveyor -> separate press -> shallow finished-product tray; independent reservoir and side console",
+    "unimplemented": "No production loop, conveyor motion, piston motion, inventory, collision or pathfinding."
+  },
+  "material_note": "Ordinary Principled PBR colors. Research clear capsule uses alpha blending; no glow textures, no baked bloom."
+}

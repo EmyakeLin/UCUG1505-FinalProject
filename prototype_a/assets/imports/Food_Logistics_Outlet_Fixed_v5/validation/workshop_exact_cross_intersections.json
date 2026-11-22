@@ -1,0 +1,53 @@
+[
+  {
+    "objects": [
+      "Single broad rounded platform",
+      "Wide smoothly blended exit ramp"
+    ],
+    "point_count": 204,
+    "min": [
+      1.6499996185302734,
+      -3.1443545818328857,
+      0.16740864515304565
+    ],
+    "max": [
+      3.190000295639038,
+      -2.6078572273254395,
+      0.23000000417232513
+    ]
+  },
+  {
+    "objects": [
+      "Trough recessed bed",
+      "Integrated green perimeter and terracotta dispatch wall"
+    ],
+    "point_count": 1506,
+    "min": [
+      0.9766998291015625,
+      -3.0500001907348633,
+      0.23999999463558197
+    ],
+    "max": [
+      3.863300323486328,
+      -0.5866998434066772,
+      0.5400000810623169
+    ]
+  },
+  {
+    "objects": [
+      "Trough recessed bed",
+      "Wide smoothly blended exit ramp"
+    ],
+    "point_count": 530,
+    "min": [
+      1.6499998569488525,
+      -3.0500001907348633,
+      0.23999999463558197
+    ],
+    "max": [
+      3.190000057220459,
+      -2.2786879539489746,
+      0.5302303433418274
+    ]
+  }
+]

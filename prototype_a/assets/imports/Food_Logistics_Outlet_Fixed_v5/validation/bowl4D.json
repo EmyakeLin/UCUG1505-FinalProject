@@ -1,0 +1,22 @@
+{
+  "base_diameter": 4,
+  "floor_top": 0.12,
+  "rim_thickness": 0.4,
+  "overall_height": 0.97,
+  "three_gap_paths": [
+    {
+      "direction_degrees": 39,
+      "sampled_clear_diameter": 1.3983967304229736
+    },
+    {
+      "direction_degrees": 141,
+      "sampled_clear_diameter": 1.3983967304229736
+    },
+    {
+      "direction_degrees": 270,
+      "sampled_clear_diameter": 1.3983968496322632
+    }
+  ],
+  "all_gaps_at_least_1_3D": true,
+  "method": "Static distance-to-triangle samples at sphere center z=.62; not runtime collision simulation."
+}

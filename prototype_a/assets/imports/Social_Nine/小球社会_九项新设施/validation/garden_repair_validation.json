@@ -1,0 +1,264 @@
+{
+  "repair_workshop": {
+    "source": "/workspace/scratch/f128404f8422/model_work/social_batch/garden_repair/final/repair_workshop.blend",
+    "glb": "/workspace/scratch/f128404f8422/model_work/social_batch/garden_repair/final/repair_workshop.glb",
+    "asset_collection": "ASSET_RepairWorkshop",
+    "root": "RepairWorkshop_ROOT",
+    "root_location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "root_scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_geometry": {
+      "mesh_count": 42,
+      "triangle_count": 25116,
+      "dimensions_D": [
+        7.1,
+        6.105,
+        1.09
+      ],
+      "bounds_min_D": [
+        -3.55,
+        -3.105,
+        0.0
+      ],
+      "bounds_max_D": [
+        3.55,
+        3.0,
+        1.09
+      ],
+      "missing_uv": [],
+      "missing_materials": [],
+      "nonfinite_coordinates_or_uv": [],
+      "material_names": [
+        "RepairWorkshop_clay_light",
+        "RepairWorkshop_cream",
+        "RepairWorkshop_metal",
+        "RepairWorkshop_sage",
+        "RepairWorkshop_sage_light",
+        "RepairWorkshop_terra",
+        "RepairWorkshop_yellow"
+      ]
+    },
+    "preview_ball_count": 0,
+    "camera_count": 0,
+    "light_count": 0,
+    "world_count": 0,
+    "ball_diameter_D": 1.0,
+    "runtime_implemented": false,
+    "glb_reimport": {
+      "passed": true,
+      "geometry": {
+        "mesh_count": 42,
+        "triangle_count": 25116,
+        "dimensions_D": [
+          7.1,
+          6.105,
+          1.09
+        ],
+        "bounds_min_D": [
+          -3.55,
+          -3.105,
+          0.0
+        ],
+        "bounds_max_D": [
+          3.55,
+          3.0,
+          1.09
+        ],
+        "missing_uv": [],
+        "missing_materials": [],
+        "nonfinite_coordinates_or_uv": [],
+        "material_names": [
+          "RepairWorkshop_clay_light",
+          "RepairWorkshop_cream",
+          "RepairWorkshop_metal",
+          "RepairWorkshop_sage",
+          "RepairWorkshop_sage_light",
+          "RepairWorkshop_terra",
+          "RepairWorkshop_yellow"
+        ]
+      },
+      "root_names": [
+        "RepairWorkshop_ROOT"
+      ],
+      "root_scale": [
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "forbidden_objects": [],
+      "dimension_error_D": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "glb_container": {
+      "magic_valid": true,
+      "version": 2,
+      "byte_length_matches": true,
+      "gltf_asset_version": "2.0",
+      "scene_count": 1,
+      "camera_count": 0,
+      "animation_count": 0,
+      "root_nodes": [
+        42
+      ],
+      "mesh_primitives_have_texcoord0": true
+    },
+    "clean_blend_reopen": {
+      "objects": 43,
+      "mesh_objects": 42,
+      "empty_objects": 1,
+      "camera_objects": 0,
+      "light_objects": 0,
+      "world_datablocks": 0,
+      "scene_has_world": false,
+      "collection_names": [
+        "ASSET_RepairWorkshop"
+      ],
+      "preview_objects": [],
+      "unit_scale": 1.0
+    }
+  },
+  "quiet_garden": {
+    "source": "/workspace/scratch/f128404f8422/model_work/social_batch/garden_repair/final/quiet_garden.blend",
+    "glb": "/workspace/scratch/f128404f8422/model_work/social_batch/garden_repair/final/quiet_garden.glb",
+    "asset_collection": "ASSET_QuietGarden",
+    "root": "QuietGarden_ROOT",
+    "root_location": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "root_scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "source_geometry": {
+      "mesh_count": 54,
+      "triangle_count": 31252,
+      "dimensions_D": [
+        7.4,
+        6.4,
+        1.982872
+      ],
+      "bounds_min_D": [
+        -3.7,
+        -3.2,
+        0.0
+      ],
+      "bounds_max_D": [
+        3.7,
+        3.2,
+        1.982872
+      ],
+      "missing_uv": [],
+      "missing_materials": [],
+      "nonfinite_coordinates_or_uv": [],
+      "material_names": [
+        "QuietGarden_cream",
+        "QuietGarden_leaf_light",
+        "QuietGarden_sage",
+        "QuietGarden_sage_light",
+        "QuietGarden_soil",
+        "QuietGarden_stone",
+        "QuietGarden_terra",
+        "QuietGarden_yellow"
+      ]
+    },
+    "preview_ball_count": 0,
+    "camera_count": 0,
+    "light_count": 0,
+    "world_count": 0,
+    "ball_diameter_D": 1.0,
+    "runtime_implemented": false,
+    "glb_reimport": {
+      "passed": true,
+      "geometry": {
+        "mesh_count": 54,
+        "triangle_count": 31252,
+        "dimensions_D": [
+          7.4,
+          6.4,
+          1.982872
+        ],
+        "bounds_min_D": [
+          -3.7,
+          -3.2,
+          0.0
+        ],
+        "bounds_max_D": [
+          3.7,
+          3.2,
+          1.982872
+        ],
+        "missing_uv": [],
+        "missing_materials": [],
+        "nonfinite_coordinates_or_uv": [],
+        "material_names": [
+          "QuietGarden_cream",
+          "QuietGarden_leaf_light",
+          "QuietGarden_sage",
+          "QuietGarden_sage_light",
+          "QuietGarden_soil",
+          "QuietGarden_stone",
+          "QuietGarden_terra",
+          "QuietGarden_yellow"
+        ]
+      },
+      "root_names": [
+        "QuietGarden_ROOT"
+      ],
+      "root_scale": [
+        [
+          1.0,
+          1.0,
+          1.0
+        ]
+      ],
+      "forbidden_objects": [],
+      "dimension_error_D": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "glb_container": {
+      "magic_valid": true,
+      "version": 2,
+      "byte_length_matches": true,
+      "gltf_asset_version": "2.0",
+      "scene_count": 1,
+      "camera_count": 0,
+      "animation_count": 0,
+      "root_nodes": [
+        54
+      ],
+      "mesh_primitives_have_texcoord0": true
+    },
+    "clean_blend_reopen": {
+      "objects": 55,
+      "mesh_objects": 54,
+      "empty_objects": 1,
+      "camera_objects": 0,
+      "light_objects": 0,
+      "world_datablocks": 0,
+      "scene_has_world": false,
+      "collection_names": [
+        "ASSET_QuietGarden"
+      ],
+      "preview_objects": [],
+      "unit_scale": 1.0
+    }
+  }
+}

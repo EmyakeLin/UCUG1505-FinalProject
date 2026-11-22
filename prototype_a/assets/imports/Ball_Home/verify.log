@@ -1,0 +1,56 @@
+12:14:50 | INFO: Data are loaded, start creating Blender stuff
+12:14:50 | INFO: Blender create Mesh node Sphere.017
+12:14:50 | INFO: Blender create Mesh node Sphere.018
+12:14:50 | INFO: Blender create Mesh node Entrance_lintelMesh
+12:14:50 | INFO: Blender create Mesh node Front_wallMesh
+12:14:50 | INFO: Blender create Mesh node Front_wallMesh.001
+12:14:50 | INFO: Blender create Mesh node Golden_moon_arcCurve
+12:14:50 | INFO: Blender create Mesh node Home_foundationMesh
+12:14:50 | INFO: Blender create Mesh node Ramp_mesh
+12:14:50 | INFO: Blender create Mesh node Sphere.016
+12:14:50 | INFO: Blender create Mesh node Quiet_central_rugMesh
+12:14:50 | INFO: Blender create Mesh node Rear_shelter_wallMesh
+12:14:50 | INFO: Blender create Mesh node Side_wallMesh
+12:14:50 | INFO: Blender create Mesh node Side_wallMesh.001
+12:14:50 | INFO: Blender create Mesh node Wall_base_trimMesh
+12:14:50 | INFO: Blender create Mesh node Wall_base_trimMesh.001
+12:14:50 | INFO: Blender create Mesh node Cylinder
+12:14:50 | INFO: Blender create Mesh node Nest_outer_bolsterMesh
+12:14:50 | INFO: Blender create Mesh node Sphere.001
+12:14:50 | INFO: Blender create Mesh node Sphere
+12:14:50 | INFO: Blender create Mesh node Cylinder.001
+12:14:50 | INFO: Blender create Mesh node Nest_outer_bolsterMesh.001
+12:14:50 | INFO: Blender create Mesh node Sphere.003
+12:14:50 | INFO: Blender create Mesh node Sphere.002
+12:14:50 | INFO: Blender create Mesh node Cylinder.002
+12:14:50 | INFO: Blender create Mesh node Nest_outer_bolsterMesh.002
+12:14:50 | INFO: Blender create Mesh node Sphere.005
+12:14:50 | INFO: Blender create Mesh node Sphere.004
+12:14:50 | INFO: Blender create Mesh node Cylinder.003
+12:14:50 | INFO: Blender create Mesh node Nest_outer_bolsterMesh.003
+12:14:50 | INFO: Blender create Mesh node Sphere.007
+12:14:50 | INFO: Blender create Mesh node Sphere.006
+12:14:50 | INFO: Blender create Mesh node Cylinder.004
+12:14:50 | INFO: Blender create Mesh node Nest_outer_bolsterMesh.004
+12:14:50 | INFO: Blender create Mesh node Sphere.009
+12:14:50 | INFO: Blender create Mesh node Sphere.008
+12:14:50 | INFO: Blender create Mesh node Cylinder.005
+12:14:50 | INFO: Blender create Mesh node Nest_outer_bolsterMesh.005
+12:14:50 | INFO: Blender create Mesh node Sphere.011
+12:14:50 | INFO: Blender create Mesh node Sphere.010
+12:14:50 | INFO: Blender create Mesh node Cylinder.006
+12:14:50 | INFO: Blender create Mesh node Nest_outer_bolsterMesh.006
+12:14:50 | INFO: Blender create Mesh node Sphere.013
+12:14:50 | INFO: Blender create Mesh node Sphere.012
+12:14:50 | INFO: Blender create Mesh node Cylinder.007
+12:14:50 | INFO: Blender create Mesh node Nest_outer_bolsterMesh.007
+12:14:50 | INFO: Blender create Mesh node Sphere.015
+12:14:50 | INFO: Blender create Mesh node Sphere.014
+12:14:50 | INFO: Blender create Mesh node Cream_roof_edgeCurve
+12:14:50 | INFO: Blender create Mesh node Cream_roof_edgeCurve.001
+12:14:50 | INFO: Blender create Mesh node Roof_shell_mesh
+12:14:50 | INFO: glTF import finished in 0.19s
+VALID: 50 meshes; 8 independent sleeping spots; finite coordinates; materials present
+Blender 4.3.2
+
+Blender quit

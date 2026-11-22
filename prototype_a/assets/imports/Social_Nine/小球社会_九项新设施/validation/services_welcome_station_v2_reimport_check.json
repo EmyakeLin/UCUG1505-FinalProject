@@ -1,0 +1,20 @@
+{
+  "source_blend": "/workspace/scratch/f128404f8422/model_work/social_batch/services/clean_exports/welcome_station_v2_clean.blend",
+  "glb": "/workspace/scratch/f128404f8422/model_work/social_batch/services/clean_exports/welcome_station_v2.glb",
+  "file_bytes": 1111808,
+  "bounds_before_D": [
+    7.4,
+    6.4,
+    2.585
+  ],
+  "bounds_after_reimport_D": [
+    7.4,
+    6.4,
+    2.585
+  ],
+  "bounds_match": true,
+  "reimport_meshes": 35,
+  "UV_missing": [],
+  "materials_missing": [],
+  "preview_or_environment_objects": []
+}

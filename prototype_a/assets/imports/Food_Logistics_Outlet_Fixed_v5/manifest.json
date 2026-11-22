@@ -1,0 +1,142 @@
+{
+  "README.md": {
+    "bytes": 2971,
+    "sha256": "56f2a3714e7ca42fb40fe84f7828c450816449f0861c6528222b4af01549b95b"
+  },
+  "Cart_README.md": {
+    "bytes": 2717,
+    "sha256": "2aa44cc51a553a1e36aeb8b2fe97d29cabdcd0ee908f97a6a0fa1b554b4dab9f"
+  },
+  "Workshop_README.md": {
+    "bytes": 2309,
+    "sha256": "148fd3bcf7f1124dca323f2a05c3fd0d7f2cf001a9fe5b95e550b629eb897ac0"
+  },
+  "AI usage declaration.md": {
+    "bytes": 16369,
+    "sha256": "845a2413aa8660db750215a0ef4f0bef9501295fbc122711b202ab9e9892ca6b"
+  },
+  "previews/dispatch_v5_outer.png": {
+    "bytes": 1790262,
+    "sha256": "accf60ec2b89799261f8f9177daf5717198fc9b036460a01732b09587b6edd3e"
+  },
+  "previews/food_cart_v02_empty_top.png": {
+    "bytes": 1351697,
+    "sha256": "cb16a53b735d237c5b01000af2a780e437eadc65b3e5f4951e54c02dd8447405"
+  },
+  "previews/building_bowl_v03_styled_front.png": {
+    "bytes": 750070,
+    "sha256": "c5742186ba7d1cac85389004350eac5893fd79392c6b812b8ed0847afb4aacb1"
+  },
+  "previews/food_cart_v02_loaded.png": {
+    "bytes": 1354908,
+    "sha256": "95bf2ab87956de9b2722066480381256f3908267347dd30693d5ef7fafd3e488"
+  },
+  "previews/dispatch_v5_front.png": {
+    "bytes": 1718075,
+    "sha256": "8a2db9ff26feeaa4c5660c18c20cadad8dbd8ae7f6813f03af21ebfbcf17f6f0"
+  },
+  "previews/building_bowl_v03_styled_top.png": {
+    "bytes": 895578,
+    "sha256": "f9efaf92bca1228f318ceeda201e97632ea67b4f0850edc9f2e91b98f732a398"
+  },
+  "previews/food_cart_v02_gate_open.png": {
+    "bytes": 1267032,
+    "sha256": "d3ca43fe69e99f8027865a8f8c27a6168030fb690826b503e5ea98f0c6ebbcae"
+  },
+  "previews/dispatch_v5_top.png": {
+    "bytes": 1683769,
+    "sha256": "58d1c3e0687517a2fce981c41b9905af85e599d7a6b00a2c246ab7fa662c722c"
+  },
+  "previews/building_bowl_v03_styled_perspective.png": {
+    "bytes": 864099,
+    "sha256": "8592f2771c1f83b160ccc2aaf896addc5aa4b83edb5dd7e4a6ddb15040d1c54e"
+  },
+  "source/building_bowl_v03.blend": {
+    "bytes": 1659072,
+    "sha256": "be95f697f1ab09d10da60ca7b978eac21dd66b2de116f7c5984777eec48ee64b"
+  },
+  "source/building_food_workshop_dispatch_v5.blend": {
+    "bytes": 4161752,
+    "sha256": "f0504f6cbc2cc2d5c378c5a585fde025550821a22f85a254f55d2db9cc29e4a5"
+  },
+  "source/Food_Logistics_Combined.blend": {
+    "bytes": 5588780,
+    "sha256": "a70d52c024d8be009272964f4c1b69eff6adccdebfb30aaec1d2fcd0a2d12b8c"
+  },
+  "source/food_cart_v02.blend": {
+    "bytes": 1275080,
+    "sha256": "c4c6ade1ca2fe73830f6414b212efe7ccfb868fb89c0585c46afe2b115ec7b22"
+  },
+  "models/energy_mote.glb": {
+    "bytes": 14792,
+    "sha256": "cfcb4f1e1fa1bcbbc075fc6e4d14c5acc41d13a51344d6eb2915020702cbea7a"
+  },
+  "models/building_food_workshop_dispatch_v5.glb": {
+    "bytes": 3004032,
+    "sha256": "3a656b079a417290edf71f58e1e535fa2ea01fda579da05788879c27759045f1"
+  },
+  "models/food_cart_v02_display.glb": {
+    "bytes": 580036,
+    "sha256": "d643d6c2e7b3e347e5160b54a7b43a302ce71965ae4897a4fc0736bf1e82ea4d"
+  },
+  "models/building_food_workshop_dispatch_v5_display.glb": {
+    "bytes": 3206624,
+    "sha256": "25c61062fedcfcde80196c697815da646ff012e6aef8d99a215bbe7954f48ed8"
+  },
+  "models/food_cart_v02.glb": {
+    "bytes": 366740,
+    "sha256": "1701cc6746be632007398d110741f8b625a4c43ff80f095b3bf31cc13110d32a"
+  },
+  "models/building_bowl_v03.glb": {
+    "bytes": 157900,
+    "sha256": "434013355a533308f945c42b944274063678633c3f5db709f32f5978e4a334c5"
+  },
+  "models/building_bowl_v03_display.glb": {
+    "bytes": 194704,
+    "sha256": "15f671cabbca9034aca073b585a937973e26f545cfca10ff9460668b542ad5fc"
+  },
+  "validation/workshop_coplanar_self_overlap.json": {
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "validation/cart_validation.json": {
+    "bytes": 9439,
+    "sha256": "7cfaf4273819b426fb599fcc6123ca536c5bbd103203a67d878583876b7e6c2c"
+  },
+  "validation/cart_validation_display.json": {
+    "bytes": 524,
+    "sha256": "dada4642d6ece446b75f5d3c3332b66382e4baa280355172d49e0ae0f310d179"
+  },
+  "validation/workshop_validation.json": {
+    "bytes": 11877,
+    "sha256": "63fb0a760f3cb22295ed44b598e4c4af3b5a5cfed9a16bec51462f1b89ee092f"
+  },
+  "validation/workshop_export_manifest.json": {
+    "bytes": 332,
+    "sha256": "7dd0bd8f18871d317c2a3ef06f682a9e35a624387902f850f3c4e4bd2e3a75f8"
+  },
+  "validation/workshop_repair_scope.json": {
+    "bytes": 446,
+    "sha256": "5ad0771a795dac507692b73e1a1ffe76b2396dad1f73ea4e15efb871f935d8be"
+  },
+  "validation/workshop_exact_cross_intersections.json": {
+    "bytes": 1001,
+    "sha256": "a27263ddf30e890d95d9725aae0b03855b2f36cc2c61cf964af34c8beac71f02"
+  },
+  "validation/bowl4D.json": {
+    "bytes": 552,
+    "sha256": "52b1aa111e9d2adc4022cba6566c9f467f71a8885ff0cb27b15b1edc7f887631"
+  },
+  "validation/workshop_preserved_geometry_validation.json": {
+    "bytes": 154,
+    "sha256": "8f3b13594de390abf79f3356527b274c88a289ef897323bcf4452d0a65e88a3e"
+  },
+  "validation/workshop_self_intersections_diagnosis.json": {
+    "bytes": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "validation/combined_source.json": {
+    "bytes": 383,
+    "sha256": "6af018fb233b755499f99b8a7a16d737d1423364a0990f164cf0e8f3f4c9ed74"
+  }
+}

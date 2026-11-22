@@ -1,0 +1,37 @@
+{
+  "Energy_Rescue_Kit.glb": {
+    "mesh_count": 7,
+    "materials": true,
+    "uv": true,
+    "finite": true,
+    "triangles": 3092
+  },
+  "Rest_Care_Kit.glb": {
+    "mesh_count": 9,
+    "materials": true,
+    "uv": true,
+    "finite": true,
+    "triangles": 6600
+  },
+  "Stretcher_Trolley.glb": {
+    "mesh_count": 15,
+    "materials": true,
+    "uv": true,
+    "finite": true,
+    "triangles": 7032
+  },
+  "Takeaway_Meal_Pack.glb": {
+    "mesh_count": 7,
+    "materials": true,
+    "uv": true,
+    "finite": true,
+    "triangles": 4764
+  },
+  "Takeaway_Snack_Pack.glb": {
+    "mesh_count": 7,
+    "materials": true,
+    "uv": true,
+    "finite": true,
+    "triangles": 6580
+  }
+}

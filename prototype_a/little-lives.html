@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>小小的生活 · 小球演示</title>
+<style>
+:root{--paper:#f6f2e9;--ink:#363a34;--muted:#697066;--line:#d9ded1;--green:#445c47;--gap:10px;--radius:16px;--motion:160ms}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Microsoft YaHei",system-ui,sans-serif}main{min-height:100svh;display:flex;flex-direction:column;padding:clamp(20px,4vw,48px);gap:20px;max-width:1440px;margin:auto}header{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap}h1{font-size:clamp(24px,3vw,34px);font-weight:600;letter-spacing:.05em;margin:0}p{line-height:1.7;margin:0;color:var(--muted)}.stage{position:relative;flex:1;min-height:380px;height:64vh;overflow:hidden;border:1px solid var(--line);border-radius:var(--radius);background:#e9eddf}.stage canvas{display:block;width:100%;height:100%;touch-action:manipulation}.note{position:absolute;left:20px;top:18px;pointer-events:none;font-size:14px}.loading{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:32px;text-align:center;white-space:pre-line;background:#e9eddf;z-index:2}.loading[hidden]{display:none}.row{display:flex;align-items:center;gap:var(--gap);flex-wrap:wrap}.footer{justify-content:space-between}.actions{display:flex;gap:var(--gap);flex-wrap:wrap}.action{font:inherit;font-size:14px;min-height:44px;padding:10px 18px;border:1px solid var(--line);border-radius:12px;background:#fffdf8;color:var(--ink);cursor:pointer;transition:background var(--motion),border-color var(--motion),transform var(--motion)}.action:hover{background:#e2e9db}.action:active{transform:translateY(1px)}.action:focus-visible{outline:3px solid #789879;outline-offset:3px}.action[aria-pressed=true]{background:var(--green);border-color:var(--green);color:white}.action:disabled{opacity:.5;cursor:wait}.hint{font-size:13px}.legend{display:flex;gap:18px;font-size:14px}.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:7px;border:1px solid #746f61}.cream{background:#ffe4b8}.blue{background:#c6dfdf}@media(max-width:600px){main{padding:18px;gap:14px}.stage{height:56vh;min-height:330px}.footer{align-items:flex-start}.hint{max-width:32ch}}@media(prefers-reduced-motion:reduce){:root{--motion:0ms}}
+</style>
+</head>
+<body>
+<main>
+  <header><h1>小小的生活</h1><p>不用忙着照顾它们，先陪它们待一会儿。</p></header>
+  <section class="stage" id="stage" aria-label="两只小球的三维生活场景">
+    <p class="note" id="status" role="status" aria-live="polite">正在准备它们的小世界…</p>
+    <div class="loading" id="loading" role="status">小家伙们正在醒来…</div>
+  </section>
+  <div class="row footer">
+    <div class="actions" id="actions" aria-label="演示动作"></div>
+    <div class="legend"><span><i class="dot cream"></i>奶团 · 好奇</span><span><i class="dot blue"></i>小雾 · 慢半拍</span></div>
+  </div>
+  <p class="hint">点击地面，看看它们会不会过来。动作按钮仅用于这个小演示。</p>
+</main>
+<template id="button-template"><button type="button" class="action" disabled aria-pressed="false"></button></template>
+<script>
+// Dependencies are pinned, with a second CDN as a fallback. No build step needed.
+const dependencies=[
+ ['https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.min.js','https://unpkg.com/three@0.160.1/build/three.min.js'],
+ ['https://cdn.jsdelivr.net/npm/matter-js@0.20.0/build/matter.min.js','https://unpkg.com/matter-js@0.20.0/build/matter.min.js'],
+ ['https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/p5.min.js','https://unpkg.com/p5@1.11.3/lib/p5.min.js']
+];
+const loading=document.getElementById('loading');
+function loadScript(url){return new Promise((resolve,reject)=>{const script=document.createElement('script');script.src=url;script.onload=resolve;script.onerror=()=>{script.remove();reject(new Error('依赖加载失败'));};document.head.appendChild(script);});}
+async function boot(){
+ try{
+  for(const urls of dependencies){try{await loadScript(urls[0]);}catch{await loadScript(urls[1]);}}
+  startWorld();
+ }catch(error){loading.hidden=false;loading.textContent='小世界暂时没能打开。\n请检查网络连接后刷新，并使用支持 WebGL 的现代浏览器。';console.error(error);}
+}
+function startWorld(){
+ const stage=document.getElementById('stage');
+ const status=document.getElementById('status');
+ const actions=document.getElementById('actions');
+ const buttonTemplate=document.getElementById('button-template');
+ const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
+ const renderer=new THREE.WebGLRenderer({antialias:true,alpha:false});
+ renderer.setPixelRatio(Math.min(window.devicePixelRatio,2));
+ renderer.setClearColor(0xe9eddf);renderer.outputColorSpace=THREE.SRGBColorSpace;
+ stage.appendChild(renderer.domElement);
+ renderer.domElement.setAttribute('aria-label','奶团和小雾会自行散步、玩耍和休息；也可使用下方动作按钮。');
+ const scene=new THREE.Scene();
+ const camera=new THREE.OrthographicCamera(-7,7,5,-5,.1,80);
+ camera.position.set(0,10,14);camera.lookAt(0,0,0);
+ scene.add(new THREE.HemisphereLight(0xfff7e5,0x879b80,2));
+ const sunlight=new THREE.DirectionalLight(0xfff2d5,2.4);sunlight.position.set(-4,8,5);scene.add(sunlight);
+ const ramp=new THREE.DataTexture(new Uint8Array([92,165,235]),3,1,THREE.RedFormat);
+ ramp.minFilter=THREE.NearestFilter;ramp.magFilter=THREE.NearestFilter;ramp.needsUpdate=true;
+ const bodyGeometry=new THREE.SphereGeometry(.48,40,28);
+ const outlineMaterial=new THREE.MeshBasicMaterial({color:0x343934,side:THREE.BackSide});
+ const eyeMaterial=new THREE.MeshBasicMaterial({color:0x343934});
+ const eyeGeometry=new THREE.SphereGeometry(1,16,12);
+ const ground=new THREE.Mesh(new THREE.CircleGeometry(6.2,80),new THREE.MeshToonMaterial({color:0xdbe3cf,gradientMap:ramp}));
+ ground.rotation.x=-Math.PI/2;ground.position.y=-.025;scene.add(ground);
+ const shadowMaterial=new THREE.MeshBasicMaterial({color:0x65735d,transparent:true,opacity:.16,depthWrite:false});
+ const engine=Matter.Engine.create();engine.gravity.scale=0;
+ const physicsScale=100;
+ const fixedStep=1/60;
+ // Rectangle boundaries are inside the visible island. Ground movement is 2D.
+ const walls=[Matter.Bodies.rectangle(0,-340,1100,40,{isStatic:true}),Matter.Bodies.rectangle(0,340,1100,40,{isStatic:true}),Matter.Bodies.rectangle(-540,0,40,700,{isStatic:true}),Matter.Bodies.rectangle(540,0,40,700,{isStatic:true})];
+ Matter.Composite.add(engine.world,walls);
+ const marker=new THREE.Mesh(new THREE.RingGeometry(.18,.22,48),new THREE.MeshBasicMaterial({color:0x758d67,transparent:true,opacity:0,side:THREE.DoubleSide,depthWrite:false}));
+ marker.rotation.x=-Math.PI/2;marker.position.y=.015;scene.add(marker);
+ const raycaster=new THREE.Raycaster();
+ const pointer=new THREE.Vector2();
+ const groundPlane=new THREE.Plane(new THREE.Vector3(0,1,0),0);
+ const hitPoint=new THREE.Vector3();
+ let clock=0,accumulator=0,mode='auto',paused=false,markerLife=0,manualUntil=0;
+ let destination=new THREE.Vector2(0,0);
+ let lastStatus='';
+ const buttons=new Map();
+ const configs=[{name:'奶团',color:0xffe8bf,x:-1.2,z:.4,phase:.5},{name:'小雾',color:0xc9e0df,x:1.1,z:0,phase:2.7}];
+ function makeCreature(config){
+  const root=new THREE.Group();const heading=new THREE.Group();const pose=new THREE.Group();
+  root.add(heading);heading.add(pose);scene.add(root);
+  const skin=new THREE.MeshToonMaterial({color:config.color,gradientMap:ramp});
+  const mesh=new THREE.Mesh(bodyGeometry,skin);const outline=new THREE.Mesh(bodyGeometry,outlineMaterial);outline.scale.setScalar(1.045);pose.add(mesh,outline);
+  const eyes=[];
+  for(const side of [-1,1]){const eye=new THREE.Mesh(eyeGeometry,eyeMaterial);eye.position.set(side*.145,.065,.447);eye.scale.set(.039,.075,.026);pose.add(eye);eyes.push(eye);}
+  const blushMaterial=new THREE.MeshBasicMaterial({color:0xe5ac9e});
+  for(const side of [-1,1]){const cheek=new THREE.Mesh(eyeGeometry,blushMaterial);cheek.position.set(side*.245,-.04,.41);cheek.scale.set(.06,.022,.015);pose.add(cheek);}
+  const mouth=new THREE.Mesh(new THREE.TorusGeometry(.035,.009,6,16,Math.PI),eyeMaterial);mouth.rotation.z=Math.PI;mouth.position.set(0,-.065,.479);pose.add(mouth);
+  const shadow=new THREE.Mesh(new THREE.CircleGeometry(.52,40),shadowMaterial.clone());shadow.rotation.x=-Math.PI/2;shadow.position.y=.005;scene.add(shadow);
+  const body=Matter.Bodies.circle(config.x*physicsScale,config.z*physicsScale,45,{frictionAir:.075,restitution:.12,friction:0});Matter.Body.setInertia(body,Infinity);Matter.Composite.add(engine.world,body);
+  return {config,root,heading,pose,eyes,mouth,shadow,body,previous:{x:body.position.x,y:body.position.y},target:new THREE.Vector2(config.x,config.z),turn:0,sleep:0,impact:0,petUntil:0,nextBlink:1+config.phase,blinkUntil:0,nextWander:0};
+ }
+ const creatures=configs.map(makeCreature);
+ function selectMode(nextMode){mode=nextMode;manualUntil=0;for(const creature of creatures){creature.nextWander=0;}syncButtons();}
+ function syncButtons(){for(const [key,button] of buttons){const selected=key==='pause'?paused:mode===key;button.setAttribute('aria-pressed',String(selected));if(key==='pause')button.textContent=paused?'继续陪它们':'暂停';}}
+ function addButton(key,label,handler){const button=buttonTemplate.content.firstElementChild.cloneNode(true);button.textContent=label;button.disabled=false;button.addEventListener('click',handler);actions.appendChild(button);buttons.set(key,button);}
+ addButton('auto','自由活动',()=>selectMode('auto'));
+ addButton('play','一起玩',()=>selectMode('play'));
+ addButton('rest','打个盹',()=>selectMode('rest'));
+ addButton('pause','暂停',()=>{paused=!paused;accumulator=0;syncButtons();});syncButtons();
+ function chooseActivity(){
+  if(clock<manualUntil)return 'visit';
+  if(mode!=='auto')return mode;
+  const cycle=clock%42;
+  if(cycle<12)return 'wander';
+  if(cycle<27)return 'play';
+  return 'rest';
+ }
+ function updateBehavior(creature,index,activity){
+  const partner=creatures[1-index];
+  const x=creature.body.position.x/physicsScale;const z=creature.body.position.y/physicsScale;
+  if(activity==='visit'){const offset=index===0?-.55:.55;creature.target.set(destination.x+offset,destination.y);}
+  else if(activity==='rest'){const restX=index===0?-.53:.53;creature.target.set(restX,.35);}
+  else if(activity==='play'){
+   const leader=Math.floor(clock/7)%2;
+   if(index===leader){const orbit=clock*.55;creature.target.set(Math.cos(orbit)*2.6,Math.sin(orbit)*1.6);}
+   else{creature.target.set(partner.body.position.x/physicsScale,partner.body.position.y/physicsScale);}
+  }else if(clock>creature.nextWander){creature.target.set((Math.random()-.5)*7,(Math.random()-.5)*4);creature.nextWander=clock+3+Math.random()*4;}
+  const dx=creature.target.x-x;const dz=creature.target.y-z;const distance=Math.hypot(dx,dz);
+  const pursuing=activity==='play';const stopDistance=pursuing ? .96 : .10;
+  const remaining=Math.max(0,distance-stopDistance);
+  let speed=Math.min(pursuing?2.5:1.45,remaining*2);
+  const isPetted=clock<creature.petUntil;if(isPetted)speed=0;
+  if(index===1)speed*=.88;
+  const resting=activity==='rest'&&distance<.22;
+  const targetSleep=resting?1:0;creature.sleep+=(targetSleep-creature.sleep)*.055;
+  const inverseDistance=distance>.001?1/distance:0;
+  const desiredX=dx*inverseDistance*speed*physicsScale/60;
+  const desiredY=dz*inverseDistance*speed*physicsScale/60;
+  const forceGain=creature.body.mass*.00055;
+  const forceX=(desiredX-creature.body.velocity.x)*forceGain;
+  const forceY=(desiredY-creature.body.velocity.y)*forceGain;
+  Matter.Body.applyForce(creature.body,creature.body.position,{x:forceX,y:forceY});
+  const desiredTurn=remaining>.2?Math.atan2(dx,dz):0;
+  const turnDifference=Math.atan2(Math.sin(desiredTurn-creature.turn),Math.cos(desiredTurn-creature.turn));creature.turn+=turnDifference*.065;
+ }
+ Matter.Events.on(engine,'collisionStart',event=>{for(const pair of event.pairs){for(const creature of creatures){const involved=pair.bodyA===creature.body||pair.bodyB===creature.body;if(involved)creature.impact=.65;}}});
+ function stepWorld(){
+  clock+=fixedStep;const activity=chooseActivity();
+  for(const [index,creature] of creatures.entries()){creature.previous.x=creature.body.position.x;creature.previous.y=creature.body.position.y;updateBehavior(creature,index,activity);creature.impact*=.86;}
+  Matter.Engine.update(engine,fixedStep*1000);
+  markerLife=Math.max(0,markerLife-fixedStep);
+  const messages={wander:'各自逛一逛，偶尔看看对方。',play:'等等我呀。',rest:'找个舒服的位置，挨着睡一会儿。',visit:'咦，那边有什么？'};
+  const beingPetted=creatures.some(creature=>clock<creature.petUntil);
+  const message=beingPetted?'轻轻碰了一下，它眯起了眼睛。':messages[activity];if(message!==lastStatus){status.textContent=message;lastStatus=message;}
+ }
+ function drawCreature(creature,alpha){
+  const blendX=THREE.MathUtils.lerp(creature.previous.x,creature.body.position.x,alpha)/physicsScale;
+  const blendZ=THREE.MathUtils.lerp(creature.previous.y,creature.body.position.y,alpha)/physicsScale;
+  creature.root.position.set(blendX,0,blendZ);creature.shadow.position.set(blendX,.005,blendZ);
+  creature.heading.rotation.y=creature.turn;
+  const velocity=Matter.Body.getSpeed(creature.body);const moving=Math.min(1,velocity/2);
+  const motionScale=reducedMotion.matches ? .15 : 1;
+  const phase=clock*9+creature.config.phase;
+  const gait=Math.sin(phase)*moving*motionScale;
+  const breath=Math.sin(clock*2+creature.config.phase)*.025;
+  const pet=clock<creature.petUntil?Math.sin(clock*15)*.07:0;
+  const heightScale=.94+breath+gait*.09-creature.sleep*.22-creature.impact*.14+pet*motionScale;
+  const widthScale=1/Math.sqrt(heightScale);
+  creature.pose.scale.set(widthScale,heightScale,widthScale);
+  const hop=Math.max(0,gait)*.075*(1-creature.sleep);
+  const bodyHeight=.48*heightScale+hop;creature.pose.position.y=bodyHeight;
+  const lean=Math.sin(phase)*moving*.045*motionScale;creature.pose.rotation.z=lean;
+  creature.shadow.scale.setScalar(1-hop*.5);creature.shadow.material.opacity=.17-hop*.3;
+  if(clock>creature.nextBlink){creature.blinkUntil=clock+.15;creature.nextBlink=clock+2.5+Math.random()*3;}
+  const blink=clock<creature.blinkUntil;const beingPetted=clock<creature.petUntil;const openness=blink ? .08 : beingPetted ? .25 : 1-creature.sleep*.92;
+  for(const eye of creature.eyes){eye.scale.y=.075*openness;}
+  creature.mouth.scale.setScalar(1-creature.sleep*.6);
+ }
+ renderer.domElement.addEventListener('pointerdown',event=>{
+  if(paused)return;
+  const bounds=renderer.domElement.getBoundingClientRect();
+  pointer.x=(event.clientX-bounds.left)/bounds.width*2-1;pointer.y=1-(event.clientY-bounds.top)/bounds.height*2;
+  raycaster.setFromCamera(pointer,camera);const hit=raycaster.ray.intersectPlane(groundPlane,hitPoint);if(!hit)return;
+  let touched=false;
+  for(const creature of creatures){const meshes=raycaster.intersectObject(creature.pose,true);if(meshes.length){creature.petUntil=clock+1.2;creature.impact=.6;touched=true;break;}}
+  if(touched){status.textContent='轻轻碰了一下，它眯起了眼睛。';lastStatus='';return;}
+  destination.set(THREE.MathUtils.clamp(hitPoint.x,-4,4),THREE.MathUtils.clamp(hitPoint.z,-2.5,2.5));manualUntil=clock+7;markerLife=2;
+  marker.position.set(destination.x,.015,destination.y);
+ });
+ function resize(){const width=stage.clientWidth;const height=stage.clientHeight;const aspect=width/height;const verticalSpan=Math.max(4.6,6.8/aspect);const horizontalSpan=verticalSpan*aspect;camera.left=-horizontalSpan;camera.right=horizontalSpan;camera.top=verticalSpan;camera.bottom=-verticalSpan;camera.updateProjectionMatrix();renderer.setSize(width,height);}
+ const observer=new ResizeObserver(resize);observer.observe(stage);resize();
+ renderer.domElement.addEventListener('webglcontextlost',event=>{event.preventDefault();paused=true;loading.hidden=false;loading.textContent='画面暂时中断，请刷新页面重新唤醒小球。';syncButtons();});
+ document.addEventListener('visibilitychange',()=>{accumulator=0;});
+ new p5(sketch=>{
+  sketch.setup=()=>{sketch.noCanvas();loading.hidden=true;};
+  sketch.draw=()=>{
+   if(!paused&&!document.hidden){const frameTime=Math.min(sketch.deltaTime/1000,.1);accumulator+=frameTime;while(accumulator>=fixedStep){stepWorld();accumulator-=fixedStep;}}
+   const alpha=paused?1:accumulator/fixedStep;
+   for(const creature of creatures)drawCreature(creature,alpha);
+   marker.material.opacity=Math.min(.7,markerLife);const ringScale=1+(2-markerLife)*.4;marker.scale.setScalar(ringScale);
+   renderer.render(scene,camera);
+  };
+ });
+}
+boot();
+</script>
+</body>
+</html>

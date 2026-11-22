@@ -1,0 +1,17 @@
+{
+  "static_only": true,
+  "ball_diameter_D": 1,
+  "main_aisle_width_D": 2.3,
+  "bed_clear_diameter_D": 1.39,
+  "ramp_rise_D": 0.12,
+  "ramp_run_D": 1.22,
+  "ramp_slope": 0.09836065573770492,
+  "mesh_count": 54,
+  "portable_roots": [
+    "Energy_Rescue_Kit_0_ROOT",
+    "Energy_Rescue_Kit_1_ROOT",
+    "Rest_Rescue_Kit_0_ROOT",
+    "Rest_Rescue_Kit_1_ROOT",
+    "Rescue_Cart_ROOT"
+  ]
+}

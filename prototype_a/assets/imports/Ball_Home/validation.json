@@ -1,0 +1,13 @@
+{
+  "static_only": true,
+  "capacity": 8,
+  "ball_diameter_D": 1,
+  "door_clear_width_D": 3.23,
+  "central_aisle_clear_D": 3.96,
+  "bed_spacing_D": 1.85,
+  "bed_diameter_D": 1.54,
+  "ramp_run_D": 1.2,
+  "ramp_rise_D": 0.12,
+  "roof_collection": "Removable_Roof",
+  "mesh_count": 50
+}

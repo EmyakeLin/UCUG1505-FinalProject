@@ -1,0 +1,8 @@
+{
+  "source": "building_food_workshop_dispatch_v5.blend",
+  "display_fruit_source": "previous FINAL perimeter_v3_display GLB (nine adjusted fruits)",
+  "new_fruit_adjustments": null,
+  "root_or_marker_changes": false,
+  "runtime_tested": false,
+  "source_sha256": "bda2e91aa37001f5c0967710741dc6ffa4050fd66e0dd06777b8632ae34dee30"
+}

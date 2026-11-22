@@ -1,0 +1,23 @@
+// Inventory and production arithmetic only: no scene, rendering, or physics.
+import assert from 'node:assert/strict';
+import {FOOD,createFoodState,canWork,workFood,growFood,loadFood,unloadFood} from './food-rules.mjs';
+const state=createFoodState();
+const total=()=>state.stock+state.cargo+state.bowl;
+const initial=total();
+growFood(state,100,1);assert.equal(state.stage,'untended');assert.equal(state.stock,0);
+workFood(state,2);assert.equal(state.work,2);
+workFood(state,3);assert.equal(state.stage,'growing');assert.equal(state.stock,0);
+growFood(state,100,0);assert.equal(state.growth,0);
+growFood(state,30,.6);assert.equal(state.stage,'ripe');assert.equal(state.stock,0);
+workFood(state,4);assert.equal(state.stock,4);assert.equal(total(),initial+FOOD.batch);
+const produced=total();
+for(let index=0;index<3;index++)assert.equal(loadFood(state),true);
+assert.equal(loadFood(state),false);assert.equal(total(),produced);
+assert.equal(state.bowl,3);assert.equal(state.cargo,3);assert.equal(state.stock,1);
+state.bowl-=1.5;assert.equal(loadFood(state),true);assert.equal(state.cargo,4);
+for(let index=0;index<4;index++)assert.equal(unloadFood(state),true);
+assert.equal(unloadFood(state),false);assert.equal(total(),produced-1.5);assert.equal(state.bowl,5.5);
+state.cargo=1;assert.equal(unloadFood(state),false);assert.equal(state.cargo,1);
+state.stock=FOOD.stockCapacity;state.stage='ripe';state.work=2;
+assert.equal(canWork(state),false);workFood(state,99);assert.equal(state.stock,8);assert.equal(state.work,2);
+console.log('Passed: tending prerequisite, light-dependent growth, harvest-only stock, resumable work, capacity limits and lossless stock/cart/bowl transfers.');

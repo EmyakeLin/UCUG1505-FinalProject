@@ -1,0 +1,106 @@
+{
+  "D": 1,
+  "static_only": true,
+  "assets": {
+    "Energy_Rescue_Kit_ROOT": {
+      "bounds_min": [
+        -0.46,
+        -0.363,
+        0.0
+      ],
+      "bounds_max": [
+        0.46,
+        0.33,
+        0.635
+      ],
+      "dimensions_D": [
+        0.92,
+        0.693,
+        0.635
+      ],
+      "mesh_objects": 7,
+      "all_meshes_have_UV": true,
+      "all_meshes_have_material": true
+    },
+    "Rest_Care_Kit_ROOT": {
+      "bounds_min": [
+        -0.46,
+        -0.347,
+        0.0
+      ],
+      "bounds_max": [
+        0.46,
+        0.303,
+        0.558
+      ],
+      "dimensions_D": [
+        0.92,
+        0.65,
+        0.558
+      ],
+      "mesh_objects": 9,
+      "all_meshes_have_UV": true,
+      "all_meshes_have_material": true
+    },
+    "Stretcher_Trolley_ROOT": {
+      "bounds_min": [
+        -0.74,
+        -1.575,
+        -0.0
+      ],
+      "bounds_max": [
+        0.74,
+        0.825,
+        0.828
+      ],
+      "dimensions_D": [
+        1.48,
+        2.4,
+        0.828
+      ],
+      "mesh_objects": 15,
+      "all_meshes_have_UV": true,
+      "all_meshes_have_material": true
+    },
+    "Takeaway_Meal_Pack_ROOT": {
+      "bounds_min": [
+        -0.5,
+        -0.49,
+        0.0
+      ],
+      "bounds_max": [
+        0.5,
+        0.4,
+        0.378
+      ],
+      "dimensions_D": [
+        1.0,
+        0.89,
+        0.378
+      ],
+      "mesh_objects": 7,
+      "all_meshes_have_UV": true,
+      "all_meshes_have_material": true
+    },
+    "Takeaway_Snack_Pack_ROOT": {
+      "bounds_min": [
+        -0.305,
+        -0.262,
+        0.0
+      ],
+      "bounds_max": [
+        0.305,
+        0.21,
+        0.555
+      ],
+      "dimensions_D": [
+        0.61,
+        0.472,
+        0.555
+      ],
+      "mesh_objects": 7,
+      "all_meshes_have_UV": true,
+      "all_meshes_have_material": true
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "Takeaway_Light_Meal.glb": {
+    "mesh_count": 7,
+    "materials": true,
+    "uv": true,
+    "finite": true,
+    "triangles": 4144
+  }
+}
